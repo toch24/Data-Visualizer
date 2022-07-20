@@ -41,12 +41,10 @@
           delete f.links[i].target.vy
           delete f.links[i].target.x
           delete f.links[i].target.y
-          delete f.links[i].source.index
           delete f.links[i].target.index
+          delete f.links[i].source.index
         }
 
-        console.log(f)
-        console.log(json_file)
         var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(f));
         el.setAttribute('href', 'data:' + data)
         el.setAttribute('download', files[0].name)
@@ -72,20 +70,20 @@
 
       fr.readAsText(files.item(0));
   
-  
-
-
-      
     fr.onload = function(e) { 
       json_file = JSON.parse(e.target.result);
-      console.log(json_file)
 
 
     //copying the content of nodes and links 
     var nodes = [...json_file.nodes]
     var links = [...json_file.links]
-
-    console.log(links)
+  //  console.log(nodes)
+    for(let i = 0; i < links.length; i++){
+      if(links[i].target.id != null || links[i].source.id != null){
+        links[i].target = links[i].target.id
+        links[i].source = links[i].source.id
+      }
+    }
 
     // Define menu
 		var menu = [
