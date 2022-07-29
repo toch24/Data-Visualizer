@@ -6,12 +6,19 @@
     <link href="./d3-context-menu.css" rel="stylesheet">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="./d3-context-menu.js"></script>
+    <link rel="stylesheet" href="index.css">
 
 </head>
 <input type="file" id="selectFiles" value="Import" /><br />
 <button id="import">Import</button>
 <body>
     <svg width="600" height="600"></svg>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Create link between existing nodes</h1>
+        </div>
+    </div>
 
 </body>
 
@@ -19,6 +26,31 @@
     //to contain the json
     var json_file
     var files
+
+const modal = document.querySelector(".modal");
+const modal_content = document.querySelector(".modal-content")
+const closeButton = document.querySelector(".close-button");
+
+
+
+function untoggleModal() {
+    if(document.getElementById("source") != null){
+      document.getElementById("source").remove();
+      document.getElementById("target").remove();
+      document.getElementById("link-button").remove();
+      modal.classList.toggle("show-modal");
+    } 
+
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        untoggleModal();
+    }
+}
+
+closeButton.addEventListener("click", untoggleModal());
+window.addEventListener("click", windowOnClick);
 
     function downloadHandler(el){
       if(json_file != null || files != null){
@@ -105,14 +137,69 @@
       }
     ]
 
+
     var add_link = [
       {
         title: 'Create Link',
         action: function(data, event){
-          createLink(data, event);
+          toggleModal();
         }
       }
     ]
+
+    
+function createLink(){
+  var src = document.getElementById("source-select").value
+  var target = document.getElementById("target-select").value
+  var label = document.getElementById("label-input").value
+  var obj = new Object()
+  obj.source = src
+  obj.target = target
+  obj.label = label
+
+  links.push(obj)
+  json_file.links.push(obj)
+ // reDraw()
+  untoggleModal()
+}
+
+
+  function toggleModal() {
+    //check for nodes that dont have any links (this is going to be the targets)
+  //all nodes are in the source
+  var src = '<div id = "source"> Source: <select name="source" id="source-select" style="width: 50%;"> '
+
+  json_file.nodes.forEach(function(node){
+    var id = node.id
+    src += '<option value='+id + '>' + node.label + '</option>'
+  })
+  src += "</select> </div>"
+
+  var temp = [...json_file.nodes]
+
+  links.forEach(function(l){
+    temp.forEach(function(n){
+      if(l.source.id == n.id || l.target.id == n.id)
+      {
+        temp.splice(temp.indexOf(n), 1)
+      }
+    })
+  })
+
+  var target = '<div id = "target"> Target: <select name="target" id="target-select" style="width: 50%;"> '
+  temp.forEach(function(node){
+      var id = node.id
+      target += '<option value=' + id + '>' + node.label + '</option>'
+  })
+  target += "</select> </div>"
+
+  var label = '<div id = label> Label: <input id=label-input placeholder="your label"> </input></div>'
+
+  modal_content.innerHTML += src+target+label+'<button id="link-button">Link!</button>'
+
+  document.getElementById("link-button").addEventListener("click", createLink)
+  modal.classList.toggle("show-modal");
+}
 
 function getNeighbors(node) {
   return links.reduce(function (neighbors, link) {
@@ -214,6 +301,7 @@ var dragDrop = d3.drag().on('start', function (node) {
   node.fx = null
   node.fy = null
 })
+//
 
 //remove nodes function
 function removeNode(d, event) {
@@ -381,8 +469,13 @@ var textLinks = g_textLink
     } //end of json onLoad 
   } //end of import function
 
+  
+
     </script>
-    <a id="exportJSON" onclick= downloadHandler(this) class="btn"><button>Download!</button></a>
+    <div>
+      <a id="exportJSON" onclick= downloadHandler(this) class="btn"><button>Download!</button></a>
+    </div>
+
     
 
 </html>
