@@ -153,6 +153,7 @@ function createLink(){
   var src = document.getElementById("source-select").value
   var target = document.getElementById("target-select").value
   var label = document.getElementById("label-input").value
+  console.log(label)
   var obj = new Object()
   obj.source = src
   obj.target = target
@@ -160,7 +161,12 @@ function createLink(){
 
   links.push(obj)
   json_file.links.push(obj)
- // reDraw()
+  reDraw()
+  simulation.force("link").links(links)
+  simulation.alpha(0.1)
+  simulation.restart()
+  console.log(links)
+
   untoggleModal()
 }
 
@@ -360,6 +366,7 @@ function reDraw() {
 
   var update_links = g_links.selectAll("line")
         .data(links);
+      console.log(links)
     update_links.exit().remove()
     linkElements = update_links.enter()
         .append("line")
@@ -373,8 +380,6 @@ function reDraw() {
     textLinks = update_link_text.enter()
       .append("text")
       .merge(update_link_text)
-
-
 
     }
 
