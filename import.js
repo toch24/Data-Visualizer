@@ -167,7 +167,7 @@ var g_links = svg.append("g")
 var linkElements = g_links.selectAll("line")
   .data(links)
   .enter().append("line")
-    .attr("stroke-width", 1)
+    .attr("stroke-width", 4)
 	  .attr("stroke", "rgba(50, 50, 50, 0.2)")
     .on('contextmenu', d3.contextMenu(menu_link))
 
