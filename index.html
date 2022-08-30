@@ -9,9 +9,23 @@
     <link rel="stylesheet" href="index.css">
 
 </head>
-<input type="file" id="selectFiles" value="Import" /><br />
-<button id="import">Import</button>
+
+
+
+
 <body>
+  <div id="buttons">
+    <div>
+  <input type="file" id="selectFiles" value="Import" /><br />
+  </div>
+  <div>
+  <button id="import">Import</button>
+  </div>
+  <div>
+    <a id="exportJSON" onclick= downloadHandler(this) class="btn"><button>Download!</button></a>
+  </div>
+  </div>
+
     <svg width="600" height="600"></svg>
     <div class="modal">
         <div class="modal-content">
@@ -112,9 +126,7 @@ window.addEventListener("click", windowOnClick);
   
 
     </script>
-    <div>
-      <a id="exportJSON" onclick= downloadHandler(this) class="btn"><button>Download!</button></a>
-    </div>
+
 
     
 

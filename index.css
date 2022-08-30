@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .modal {
     position: fixed;
     left: 0;
@@ -46,4 +50,16 @@
 #source select option{
     width: 50px;
     height: auto;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(104, 200, 242);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#buttons div{
+    margin-left: 3vw;
 }
