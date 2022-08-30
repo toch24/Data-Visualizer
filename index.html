@@ -103,7 +103,7 @@ window.addEventListener("click", windowOnClick);
 
       fr.readAsText(files.item(0));
   
-    fr.onload = function(e) { 
+      fr.onload = function(e) { 
       json_file = JSON.parse(e.target.result);
 
 
@@ -415,7 +415,7 @@ var textElements = g_textNode
   .enter().append("text")
     .text(function (node) { 
       if(node.matching.length > 0){
-        return node.label + " (" + node.matching[2] + ")" 
+        return node.label + " (" + node.matching[2] + ")" + " (" + node.matching[0] + ")"
       }
       return  node.label 
     })
