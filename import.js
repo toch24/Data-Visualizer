@@ -185,7 +185,7 @@ var g_textLink = svg.append("g")
 // simulation setup with all forces
 var simulation = d3
   .forceSimulation()
-  .force('charge', d3.forceManyBody().strength(-120))
+  .force('charge', d3.forceManyBody())
   .force('center', d3.forceCenter(width / 2, height / 2))
 
 var linkForce = d3
@@ -196,22 +196,24 @@ var linkForce = d3
   var simulation = d3
   .forceSimulation()
   .force('link', linkForce)
-  .force('charge', d3.forceManyBody().strength(-120))
+  .force('charge', d3.forceManyBody().strength(-150))
   .force('center', d3.forceCenter(width / 2, height / 2))
 
 var dragDrop = d3.drag().on('start', function (node) {
-  node.fx = node.x
-  node.fy = node.y
-}).on('drag', function (node) {
-  simulation.alphaTarget(0.7).restart()
   node.fx = d3.event.x
   node.fy = d3.event.y
+}).on('drag', function (node) {
+  node.fx = d3.event.x
+  node.fy = d3.event.y
+  simulation.alpha(1).restart();
+
 }).on('end', function (node) {
-  if (!d3.event.active) {
-    simulation.alphaTarget(0)
+ /* if (!d3.event.active) {
+    simulation.alpha(1)
   }
   node.fx = null
-  node.fy = null
+  node.fy = null*/
+  
 })
 //
 
@@ -238,13 +240,6 @@ function removeNode(d, event) {
   json_file.nodes.splice(nodeIndex, 1)
 
   import_file(json_file)
-/*  simulation.force("link").links(links)
-  simulation.nodes(nodes)
-  simulation.alpha(1)
-  simulation.restart()
-
-  reDraw()*/
-
 }
 
 function removeLink(d, event){
@@ -253,7 +248,7 @@ function removeLink(d, event){
   links.splice(links.indexOf(d), 1)
   json_file.links.splice(json_file.links.indexOf(d), 1)
   simulation.force("link").links(links)
-  simulation.alpha(0.1)
+  simulation.alpha(1).restart()
   simulation.restart()
 
   reDraw()
@@ -297,6 +292,7 @@ function selectNode(selectedNode) {
   textElements.attr('fill', function (node) { return getTextColor(node, neighbors) })
   linkElements.attr('stroke', function (link) { return getLinkColor(selectedNode, link) })
   textLinks.attr('visibility', function (link) { return getVisibility(selectedNode, link)})
+
 }
 
 
