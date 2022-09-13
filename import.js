@@ -37,6 +37,12 @@ var import_file = function(json_file) {
         action: function(data, event){
           toggleModal();
         }
+      },
+      {
+        title: 'Create Node',
+        action: function(data, event){
+            newNodeModal();
+        }
       }
     ]
 
@@ -45,8 +51,8 @@ function createLink(){
   var src = document.getElementById("source-select").value
   var target = document.getElementById("target-select").value
   var label = document.getElementById("label-input").value
-  console.log(label)
-  var obj = new Object()
+
+  let obj = new Object()
   obj.source = src
   obj.target = target
   obj.label = label
@@ -55,13 +61,53 @@ function createLink(){
   json_file.links.push(obj)
   import_file(json_file)
 
-/*  reDraw()
+/*  reDraw(
   simulation.force("link").links(links)
   simulation.alpha(0.1)
   simulation.restart()
   console.log(links)*/
 
   untoggleModal()
+}
+
+function createNode(){
+  let valid = true
+
+  const id = document.getElementById("id-input").value
+  const label = document.getElementById("label-input").value
+  const type = document.getElementById("id-type").value
+  const ontology = document.getElementById("ontology-name").value
+  const partialorno = document.getElementById("e_p").value
+  const ontologyid = document.getElementById("ontology-id-input").value
+  const matching_concept = document.getElementById("matching-node").value
+
+  let matching = []
+  if(ontology.length != 0 && partialorno.length != 0 && ontologyid.length != 0 && matching_concept.length != 0 ){
+    matching = [ontology, partialorno, ontologyid, matching_concept]
+  }
+
+  if(id.length === 0) valid = false
+  if(label.length === 0) valid = false
+  if(type.length === 0) valid = false
+
+  if(valid){
+    let obj = new Object()
+    obj.id = id
+    obj.label = label
+    obj.type = type
+    obj.matching = matching
+    
+    nodes.push(obj)
+    json_file.nodes.push(obj)
+    console.log(nodes)
+    import_file(json_file)
+
+    untoggleNodeModal()
+  }
+  else{
+    alert("There are important fields that are empty")
+  }
+
 }
 
 
@@ -74,6 +120,33 @@ function untoggleModal() {
       document.getElementById("label").remove();
       modal.classList.toggle("show-modal");
     } 
+}
+
+function untoggleNodeModal(){
+    document.getElementById("id-node").remove()
+    document.getElementById("label-node").remove()
+    document.getElementById("type").remove()
+    document.getElementById("ontology").remove()
+    document.getElementById("partialorno").remove()
+    document.getElementById("ontology-id").remove()   
+    document.getElementById("matching").remove()
+    document.getElementById("create-node-button").remove()
+    modal_node.classList.toggle("show-modal")
+}
+
+function newNodeModal(){
+  const id = '<div id = "id-node"> id: <input id="id-input" placeholder="ID"> </input> </div>'
+  const label = '<div id = "label-node"> label: <input id=label-input placeholder="label"> </input></div>'
+  const type = '<div id = "type"> type: <input id="id-type" placeholder="type"> </input></div>'
+  const ontoloy_name = '<div id = "ontology"> ontology name: <input id="ontology-name" placeholder="ontology name"> </input></div>'
+  const exact_or_partial = '<div id = "partialorno"> exact match or partial: <select id="e_p" style="width: 50%;"> <option value="" disabled selected>Select</option> <option value="E"> E (exact) </option> <option value="P"> P (partial) </option> </select> </div>'
+  const ontology_id = '<div id = "ontology-id">ontology id: <input id="ontology-id-input" placeholder="ontology ID" ></input> </div>'
+  const matching_concept = '<div id = "matching"> matching concept: <input id="matching-node" placeholder="matching concept"> </input> </div>'
+
+  modal_node_content.innerHTML += id+label+type+ontoloy_name+exact_or_partial+ontology_id+matching_concept+'<button id="create-node-button">Create!</button>'
+
+  document.getElementById("create-node-button").addEventListener("click", createNode)
+  modal_node.classList.toggle("show-modal");
 }
 
   function toggleModal() {

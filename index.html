@@ -34,6 +34,13 @@
         </div>
     </div>
 
+    <div class="modal_node">
+      <div class="modal-node">
+          <span class="close-button">&times;</span>
+          <h1>Create a new node</h1>
+      </div>
+  </div>
+
 </body>
 <script type = 'text/javascript' src="import.js"></script>
 <script>
@@ -41,6 +48,8 @@
 
 const modal = document.querySelector(".modal");
 const modal_content = document.querySelector(".modal-content")
+const modal_node = document.querySelector(".modal_node")
+const modal_node_content = document.querySelector(".modal-node");
 const closeButton = document.querySelector(".close-button");
 
 
@@ -52,12 +61,26 @@ function untoggleModal() {
       document.getElementById("label").remove();
       modal.classList.toggle("show-modal");
     } 
+}
 
+function untoggleNodeModal(){
+  document.getElementById("id-node").remove()
+    document.getElementById("label-node").remove()
+    document.getElementById("type").remove()
+    document.getElementById("ontology").remove()
+    document.getElementById("partialorno").remove()
+    document.getElementById("ontology-id").remove()   
+    document.getElementById("matching").remove()
+    document.getElementById("create-node-button").remove()
+    modal_node.classList.toggle("show-modal")
 }
 
 function windowOnClick(event) {
     if (event.target === modal) {
         untoggleModal();
+    }
+    else if (event.target === modal_node){
+      untoggleNodeModal();
     }
 }
 
