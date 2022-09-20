@@ -10,9 +10,6 @@
 
 </head>
 
-
-
-
 <body>
   <div id="buttons">
     <div>
@@ -27,129 +24,32 @@
   </div>
 
     <svg width="600" height="600"></svg>
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
+    <div id="modal" class="modal">
+        <div id="modal-content" class="modal-content">
+            <span id="close-button" class="close-button">&times;</span>
             <h1>Create link between existing nodes</h1>
         </div>
     </div>
 
-    <div class="modal_node">
-      <div class="modal-node">
-          <span class="close-button">&times;</span>
+    <div id="modal_node" class="modal_node">
+      <div id="modal-node" class="modal-node">
+          <span id="close-button" class="close-button">&times;</span>
           <h1>Create a new node</h1>
       </div>
   </div>
 
 </body>
+
+<script type = 'text/javascript' src="main.js"></script>
 <script type = 'text/javascript' src="import.js"></script>
 <script>
-
-
 const modal = document.querySelector(".modal");
 const modal_content = document.querySelector(".modal-content")
 const modal_node = document.querySelector(".modal_node")
 const modal_node_content = document.querySelector(".modal-node");
 const closeButton = document.querySelector(".close-button");
-
-
-function untoggleModal() {
-    if(document.getElementById("source") != null){
-      document.getElementById("source").remove();
-      document.getElementById("target").remove();
-      document.getElementById("link-button").remove();
-      document.getElementById("label").remove();
-      modal.classList.toggle("show-modal");
-    } 
-}
-
-function untoggleNodeModal(){
-  document.getElementById("id-node").remove()
-    document.getElementById("label-node").remove()
-    document.getElementById("type").remove()
-    document.getElementById("ontology").remove()
-    document.getElementById("partialorno").remove()
-    document.getElementById("ontology-id").remove()   
-    document.getElementById("matching").remove()
-    document.getElementById("create-node-button").remove()
-    modal_node.classList.toggle("show-modal")
-}
-
-function windowOnClick(event) {
-    if (event.target === modal) {
-        untoggleModal();
-    }
-    else if (event.target === modal_node){
-      untoggleNodeModal();
-    }
-}
-
-closeButton.addEventListener("click", untoggleModal());
-window.addEventListener("click", windowOnClick);
-
-    function downloadHandler(el){
-      if(json_file != null || files != null){
-        let f = JSON.parse(JSON.stringify(json_file));
-        
-        for(var i = 0; i < f.nodes.length; i++){
-          delete f.nodes[i].vx
-          delete f.nodes[i].vy
-          delete f.nodes[i].x
-          delete f.nodes[i].y
-          delete f.nodes[i].index
-        }
-
-        for(var i = 0; i < f.links.length; i++){
-          delete f.links[i].source.vx
-          delete f.links[i].source.vy
-          delete f.links[i].source.x
-          delete f.links[i].source.y
-          delete f.links[i].target.vx
-          delete f.links[i].target.vy
-          delete f.links[i].target.x
-          delete f.links[i].target.y
-          delete f.links[i].target.index
-          delete f.links[i].source.index
-        }
-
-        var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(f));
-        el.setAttribute('href', 'data:' + data)
-        el.setAttribute('download', files[0].name)
-      }
-      else{
-        alert("Nothing to download!")
-      }
-
-    }
-
-    document.getElementById('import').onclick = function(){
-      files = document.getElementById('selectFiles').files
-      if(files.length <= 0){
-        alert("No file!")
-        return false
-      }
-      if(files[0].type != 'application/json'){
-        alert("Not a JSON file!")
-        return false
-      }
-
-      var fr = new FileReader();
-
-      fr.readAsText(files.item(0));
-  
-      //to contain the json
-
-      fr.onload = function(e) { 
-      json_file = JSON.parse(e.target.result);
-      import_file(json_file)
-    } //end of json onLoad 
-
-  } //end of import function
-
-  
-
-    </script>
-
+main_function()
+</script>
 
     
 

@@ -368,10 +368,6 @@ function selectNode(selectedNode) {
 
 }
 
-
-
-
-
 var nodeElements = g_nodes.selectAll("circle")
   .data(nodes)
   .enter().append("circle")
