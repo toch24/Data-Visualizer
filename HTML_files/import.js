@@ -1,4 +1,4 @@
-var import_file = function(json_file) {
+var import_file = function(json_file, file_name) {
     //copying the content of nodes and links 
     var nodes = [...json_file.nodes]
     var links = [...json_file.links]
@@ -41,7 +41,15 @@ var import_file = function(json_file) {
   
         var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(f));
         el.setAttribute('href', 'data:' + data)
-        el.setAttribute('download', files[0].name)
+        if(files != null){
+          el.setAttribute('download', files[0].name)
+        }
+        else{
+          var result = /[^/]*$/.exec(file_name)[0];
+          el.setAttribute('download', result)
+        }
+        
+     
       }
       else{
         alert("Nothing to download!")
@@ -97,7 +105,7 @@ function createLink(){
 
   links.push(obj)
   json_file.links.push(obj)
-  import_file(json_file)
+  import_file(json_file, file_name)
 
 /*  reDraw(
   simulation.force("link").links(links)
@@ -138,7 +146,7 @@ function createNode(){
     nodes.push(obj)
     json_file.nodes.push(obj)
     console.log(nodes)
-    import_file(json_file)
+    import_file(json_file, file_name)
 
     untoggleNodeModal()
   }
@@ -350,7 +358,7 @@ function removeNode(d, event) {
   var nodeIndex = json_file.nodes.indexOf(d)
   json_file.nodes.splice(nodeIndex, 1)
 
-  import_file(json_file)
+  import_file(json_file, file_name)
 }
 
 function removeLink(d, event){

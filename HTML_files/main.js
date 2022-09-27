@@ -33,13 +33,17 @@ function windowOnClick(event) {
 closeButton.addEventListener("click", untoggleModal());
 window.addEventListener("click", windowOnClick);
 
+files = null
+
 //initial graph
 fetch(file)
 .then(response => response.json())
-.then(json => import_file(json))
+.then(json => import_file(json, file))
+
 
     document.getElementById('import').onclick = function(){
       files = document.getElementById('selectFiles').files
+      console.log(files)
       if(files.length <= 0){
         alert("No file!")
         return false

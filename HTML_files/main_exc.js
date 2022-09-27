@@ -36,7 +36,7 @@ let main_file_exc = function(file) {
     //initial graph
     fetch(file)
     .then(response => response.json())
-    .then(json => import_file_exc(json))
+    .then(json => import_file_exc(json, file))
     
         document.getElementById('import_exc').onclick = function(){
           files = document.getElementById('selectFiles_exc').files
