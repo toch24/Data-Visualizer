@@ -1,0 +1,279 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "NEGATION_1_0",
+            "label": "without",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "SAEs",
+            "type": "CONDITION",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "serious",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "42745003",
+                "Serious"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "adverse drug reactions",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "T78.1",
+                "Other adverse food reactions, not elsewhere classified"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_2_0",
+            "label": "3",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "physically healthy",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "Z76.3",
+                "Healthy person accompanying sick person"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_1",
+            "label": "ambulatory",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "255327002",
+                "Ambulatory"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DEVICE_3_0",
+            "label": "walker",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DEVICE_3_1",
+            "label": "cane",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_3_0",
+            "label": "corrected vision",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP417729-3",
+                "corrected"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_3_1",
+            "label": "corrected hearing",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP417729-3",
+                "corrected"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "Co-morbid medical conditions",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_5_0",
+            "label": "treatment",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1010875",
+                "Radiation Treatment Delivery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_0",
+            "label": "selective serotonin reuptake inhibitors (SSRIs)",
+            "type": "DRUG",
+            "matching": [
+                "ATC",
+                "E",
+                "N06AB",
+                "Selective serotonin reuptake inhibitors"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_0",
+            "label": "benzodiazepine",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_22720",
+                "benzodiazepine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_1",
+            "label": "bronchodilator medications",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_35523",
+                "bronchodilator agent"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_2",
+            "label": "memantine",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "6719",
+                "memantine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_0",
+            "label": "chronic obstructive pulmonary disease (COPD)",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "13645005",
+                "Chronic obstructive lung disease"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_1_0",
+            "target": "NEGATION_1_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_5_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_0",
+            "label": "has_condition"
+        }
+    ]
+}

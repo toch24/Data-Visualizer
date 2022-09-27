@@ -1,0 +1,384 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "disorders that affect cognition",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F48.2",
+                "Pseudobulbar affect"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_0_0",
+            "label": "distinguishable from",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "focal disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "L74.5",
+                "Focal hyperhidrosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_1_0",
+            "label": "cranial image MRI",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "77417",
+                "Therapeutic radiology port image(s)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_1_1",
+            "label": "CT",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "E",
+                "CT",
+                "Computed tomography services furnished using equipment that does not meet each of the attributes of the national electrical manufacturers association (nema) xr-29-2013 standard"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "organic disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "J66",
+                "Airway disease due to specific organic dust"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_2",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_3",
+            "label": "delirium",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "2776000",
+                "Delirium"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "DSM-IV criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "cannot swallow",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "P",
+                "87.61",
+                "Barium swallow"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_1",
+            "label": "difficulty swallowing",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "288939007",
+                "Difficulty swallowing"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "Illiteracy",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "161112004",
+                "Illiteracy"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_4_0",
+            "label": "prior to AD",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_6_0",
+            "label": "cholinesterase inhibitor",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_38462",
+                "EC 3.1.1.7 (acetylcholinesterase) inhibitor"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_1",
+            "label": "memantine",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "6719",
+                "memantine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_6_0",
+            "label": "in the 3 months prior to Screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_7_0",
+            "label": "poor response",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "R39.12",
+                "Poor urinary stream"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_7_1",
+            "label": "tolerability",
+            "type": "CONDITION",
+            "matching": [
+                "NCIT",
+                "E",
+                "Thesaurus.owl#C98791",
+                "Tolerability Study"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_7_0",
+            "label": "prior",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_7_0",
+            "label": "donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_0_1",
+            "target": "NEGATION_0_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_1_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_1_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_4_0",
+            "target": "TEMPORAL_4_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_6_1",
+            "target": "TEMPORAL_6_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_7_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_7_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_7_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "CONDITION_7_1",
+            "target": "TEMPORAL_7_0",
+            "label": "has_temporal"
+        }
+    ]
+}

@@ -1,0 +1,433 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "Age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "\u226550 to \u226485",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_0_0",
+            "label": "as of the date of informed consent",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "Alzheimer's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "Diagnostic and Statistical Manual of Mental Disorders 4th Edition (DSM-IV)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA15455-1",
+                "4th edition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_1",
+            "label": "National Institute of Neurological",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP419586-5",
+                "National Institute of Drug Abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_2",
+            "label": "Communicative Disorders",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU021526",
+                "Communicative limitation"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_3",
+            "label": "Strokes",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_4",
+            "label": "Alzheimer's disease",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP74474-5",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_5",
+            "label": "Related Disorders Association",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA31343-9",
+                "Related"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_6",
+            "label": "NINCDS-ADRDA)",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "Mini Mental Status Examination (MMSE) score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP156471-7",
+                "Mini-Mental Status Examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_2_0",
+            "label": "\u226510 to \u226426",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_2_0",
+            "label": "at screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_3_0",
+            "label": "Global Clinical Dementia Rating (CDR) score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044678",
+                "Clinical dementia rating scale"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_3_0",
+            "label": "0.5, 1 or 2",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "at screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PROCEDURE_4_0",
+            "label": "procedures for",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "00216",
+                "Anesthesia for intracranial procedures"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_4_1",
+            "label": "cognitive tests",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "95056",
+                "Photo tests"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_4_2",
+            "label": "other tests",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "95056",
+                "Photo tests"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "as of the date of informed consent",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_6_0",
+            "label": "No",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_6_0",
+            "label": "past",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_6_0",
+            "label": "donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_7_0",
+            "label": "Ongoing",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_7_1",
+            "label": "for the past 3 months",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_7_0",
+            "label": "donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_8_0",
+            "label": "Ongoing",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_8_1",
+            "label": "for the past 3 months",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_8_0",
+            "label": "donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_0",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_3",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_4",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_5",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_6",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "TEMPORAL_2_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "VALUE_2_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "VALUE_3_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_4_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_4_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_4_2",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_6_0",
+            "target": "TEMPORAL_6_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_6_0",
+            "target": "NEGATION_6_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_7_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_7_0",
+            "target": "TEMPORAL_7_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_7_0",
+            "target": "TEMPORAL_7_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_8_0",
+            "target": "TEMPORAL_8_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_8_0",
+            "target": "TEMPORAL_8_1",
+            "label": "has_temporal"
+        }
+    ]
+}

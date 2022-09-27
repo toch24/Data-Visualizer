@@ -1,0 +1,139 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "TEMPORAL_0_0",
+            "label": "concomitant",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_0_0",
+            "label": "acetylcholinesterase inhibitor",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_38462",
+                "EC 3.1.1.7 (acetylcholinesterase) inhibitor"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "psychiatric disorders",
+            "type": "CONDITION",
+            "matching": [
+                "HP",
+                "E",
+                "HP_0000708",
+                "Behavioral abnormality"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "drug overuse",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "T200",
+                "Clinical Drug"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "alcohol abuse",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "F10.1",
+                "Alcohol abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_2_0",
+            "label": "within 5 years",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "medical conditions",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "epilepsy",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "84757009",
+                "Epilepsy"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "DRUG_0_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_0_0",
+            "target": "TEMPORAL_0_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_2_1",
+            "target": "TEMPORAL_2_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        }
+    ]
+}

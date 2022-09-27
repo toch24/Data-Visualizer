@@ -1,0 +1,647 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "Men",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_1",
+            "label": "Women",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "50 years old or more",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_0_1",
+            "label": "< or = 17",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_0_2",
+            "label": "< 40",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_0_3",
+            "label": "= 0.5",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_0_4",
+            "label": "preserved",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "mild cognitive impairment (MCI)",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "386805003",
+                "Mild cognitive disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "progressive hippocampal amnestic syndrome",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "N01",
+                "Rapidly progressive nephritic syndrome"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_2",
+            "label": "cognitive disorders",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "R41.841",
+                "Cognitive communication deficit"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_3",
+            "label": "Alzheimer's Disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_0",
+            "label": "Free and cued selective reminding test ( FCSRT )",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP40489-4",
+                "Dihydrocodeine Free+Hydrocodol Free"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_1",
+            "label": "Free Recall",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP75501-4",
+                "Recall"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_2",
+            "label": "Total Recall",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP75501-4",
+                "Recall"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_3",
+            "label": "Clinical Dementia Rating (CDR)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044678",
+                "Clinical dementia rating scale"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_4",
+            "label": "General cognition",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP200138-8",
+                "General Practitioner Assessment of Cognition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_5",
+            "label": "functional performance",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP185405-0",
+                "Functional performance"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_6",
+            "label": "Diagnostic Manual of Mental Disorders DSM-IV criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_7",
+            "label": "Statistical Manual of Mental Disorders DSM-IV criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_0_0",
+            "label": "and Buschke procedure",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "85999",
+                "Unlisted hematology and coagulation procedure"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_0_1",
+            "label": "study",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "78725",
+                "Kidney function study, non-imaging radioisotopic study"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "mild cognitive impairment (",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "386805003",
+                "Mild cognitive disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_1",
+            "label": "MCI",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "282110000",
+                "mCi"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_2",
+            "label": "hippocampal amnestic syndrome",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F04",
+                "Amnestic disorder due to known physiological condition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_3",
+            "label": "cognitive disorders",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "R41.841",
+                "Cognitive communication deficit"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_5_0",
+            "label": "General cognition",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP200138-8",
+                "General Practitioner Assessment of Cognition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_5_1",
+            "label": "functional performance",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP185405-0",
+                "Functional performance"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_5_2",
+            "label": "NINCDS-ADRDA",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_5_3",
+            "label": "DSM-IV criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_5_0",
+            "label": "sufficiently",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_5_1",
+            "label": "preserved",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_5_0",
+            "label": "Alzheimer's Disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_5_0",
+            "label": "neuro-imaging",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1010979",
+                "Liver imaging"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "time of the screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PROCEDURE_7_0",
+            "label": "electrocardiogram (ECG)",
+            "type": "PROCEDURE",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "89.52",
+                "Electrocardiogram"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_7_0",
+            "label": "within the previous 6 months",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_9_0",
+            "label": "Clinical laboratory values",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP75011-4",
+                "Laboratory"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_9_0",
+            "label": "within normal limits",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_9_1",
+            "label": "abnormal",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_9_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_10_0",
+            "label": "Clinical Dementia Rating (CDR - sum of the boxes)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044678",
+                "Clinical dementia rating scale"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_10_0",
+            "label": "= 0.5",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_1",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_3",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_4",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_5",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_6",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_7",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_0_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_0_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PERSON_0_1",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_0_1",
+            "target": "VALUE_0_1",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_0_2",
+            "target": "VALUE_0_2",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_0_3",
+            "target": "VALUE_0_3",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_0_4",
+            "target": "VALUE_0_4",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_5_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_5_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_5_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_5_3",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_5_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_5_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "MEASUREMENT_5_3",
+            "target": "TEMPORAL_5_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_5_0",
+            "target": "VALUE_5_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_5_0",
+            "target": "VALUE_5_1",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_7_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PROCEDURE_7_0",
+            "target": "TEMPORAL_7_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_9_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_9_0",
+            "target": "VALUE_9_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_9_0",
+            "target": "VALUE_9_1",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_9_0",
+            "target": "NEGATION_9_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_10_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_10_0",
+            "target": "VALUE_10_0",
+            "label": "has_value"
+        }
+    ]
+}

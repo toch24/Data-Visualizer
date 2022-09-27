@@ -1,0 +1,144 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "causes",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "N46.02",
+                "Azoospermia due to extratesticular causes"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "medical disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "E74.03",
+                "Cori disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "psychiatric disease",
+            "type": "CONDITION",
+            "matching": [
+                "NCIT",
+                "E",
+                "Thesaurus.owl#C2893",
+                "Psychiatric Disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "Clinical indication",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "O82",
+                "Encounter for cesarean delivery without indication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_0",
+            "label": "psychoactive drugs",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_35471",
+                "psychotropic drug"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_1",
+            "label": "experimental drug",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "T050",
+                "Experimental Model of Disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_2_0",
+            "label": "other than",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_2_0",
+            "target": "NEGATION_2_0",
+            "label": "has_negation"
+        }
+    ]
+}

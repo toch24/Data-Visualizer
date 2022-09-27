@@ -1,0 +1,519 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "Men",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_1",
+            "label": "women",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_2",
+            "label": "aged",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "40 to 90",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "DSM-IV",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA15460-1",
+                "IV"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "probable",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "452201000124102",
+                "Probable"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "NINCDS-ADRDA criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "at baseline",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_3_0",
+            "label": "MMSE score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP124270-2",
+                "SCORE"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_3_0",
+            "label": "10 to 26",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "generally healthy",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "Z76.3",
+                "Healthy person accompanying sick person"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_1",
+            "label": "ambulatory",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "255327002",
+                "Ambulatory"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_5_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_5_0",
+            "label": "acetylcholinesterase inhibitor",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_38462",
+                "EC 3.1.1.7 (acetylcholinesterase) inhibitor"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "4 weeks before screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PROCEDURE_6_0",
+            "label": "MRI",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1014877",
+                "Magnetic resonance imaging, brain, functional MRI"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_6_0",
+            "label": "3 months before screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_8_0",
+            "label": "TIA",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G45.9",
+                "Transient cerebral ischemic attack, unspecified"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_8_1",
+            "label": "major infarction",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "I63",
+                "Cerebral infarction"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_9_0",
+            "label": "Epilepsy",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "84757009",
+                "Epilepsy"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_0",
+            "label": "degenerative disorder",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "362975008",
+                "Degenerative disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_1",
+            "label": "psychiatric disorder",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "74732009",
+                "Mental disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_2",
+            "label": "serious disorder",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "42745003",
+                "Serious"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_3",
+            "label": "alcoholism",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "7200002",
+                "Alcoholism"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_4",
+            "label": "drug abuse",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "26416006",
+                "Drug abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_11_0",
+            "label": "sensitive",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "83185005",
+                "Sensitive"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_11_0",
+            "label": "acetylcholinesterase",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "195",
+                "acetylcholinesterase"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_12_0",
+            "label": "concomitant",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_12_0",
+            "label": "medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_12_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_1",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_2",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_2",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "CONDITION_3_0",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "VALUE_3_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_5_0",
+            "target": "TEMPORAL_5_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_5_0",
+            "target": "NEGATION_5_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_6_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PROCEDURE_6_0",
+            "target": "TEMPORAL_6_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_11_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_11_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_12_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_12_0",
+            "target": "TEMPORAL_12_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_12_0",
+            "target": "NEGATION_12_0",
+            "label": "has_negation"
+        }
+    ]
+}

@@ -1,0 +1,347 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "sex",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_1",
+            "label": "age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "55-95 years old",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "amnestic mild cognitive impairment",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "G31.84",
+                "Mild cognitive impairment, so stated"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "subjective memory complaints",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H53.1",
+                "Subjective visual disturbances"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "functional impairment",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K59.1",
+                "Functional diarrhea"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_2",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "Wechsler Memory Scale-III Logical Memory combined Story A + B immediate recall score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP267166-9",
+                "Memory score"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_1",
+            "label": "combined Story A + B delayed recall score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP75501-4",
+                "Recall"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_2",
+            "label": "Free",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP40489-4",
+                "Dihydrocodeine Free+Hydrocodol Free"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_3",
+            "label": "Cued Selective Reminding Test immediate recall",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP32637-8",
+                "Immediate"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_4",
+            "label": "delayed recall score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP75501-4",
+                "Recall"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_5",
+            "label": "Selective Reminding Test immediate recall",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP32637-8",
+                "Immediate"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_6",
+            "label": "delayed recall score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP75501-4",
+                "Recall"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_2_0",
+            "label": "greater than 1.5 Standard Deviation (SD) below norms",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_2_1",
+            "label": "greater than 1.5 SD below norms",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_2_0",
+            "label": "no",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_3_0",
+            "label": "Folstein Mini Mental State (MMSE) score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044491",
+                "Mini-mental state examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_3_0",
+            "label": "\u2265 23 out of 30",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_4_0",
+            "label": "Clinical Dementia Rating (CDR)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044678",
+                "Clinical dementia rating scale"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_4_0",
+            "label": "0.5",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_gender"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_1",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_1",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_3",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_4",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_5",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_6",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_2_2",
+            "target": "VALUE_2_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_2_6",
+            "target": "VALUE_2_1",
+            "label": "has_value"
+        },
+        {
+            "source": "CONDITION_2_1",
+            "target": "NEGATION_2_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "VALUE_3_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_4_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "MEASUREMENT_4_0",
+            "target": "VALUE_4_0",
+            "label": "has_value"
+        }
+    ]
+}

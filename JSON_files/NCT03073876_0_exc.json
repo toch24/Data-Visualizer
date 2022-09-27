@@ -1,0 +1,267 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "NEGATION_0_0",
+            "label": "No",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "Parkinson's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G20",
+                "Parkinson's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_2",
+            "label": "Lewy Body dementia",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G31.83",
+                "Dementia with Lewy bodies"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_3",
+            "label": "Normal Pressure Hydrocephalus",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "30753002",
+                "Normal pressure hydrocephalus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_4",
+            "label": "Fronto-temporal dementia",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "G31.0",
+                "Frontotemporal dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_5",
+            "label": "cerebral vascular accident",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "D57.03",
+                "Hb-SS disease with cerebral vascular involvement"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_1_0",
+            "label": "No",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_1_0",
+            "label": "prior",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_1_0",
+            "label": "cholinesterase inhibitors",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_38462",
+                "EC 3.1.1.7 (acetylcholinesterase) inhibitor"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_2_0",
+            "label": "No",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_2_0",
+            "label": "prior",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_2_0",
+            "label": "memantine hydrochloride",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "236685",
+                "memantine hydrochloride"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_3_0",
+            "label": "No",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "concurrent",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_3_0",
+            "label": "anticholinergic",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_48873",
+                "cholinergic antagonist"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_3_0",
+            "label": "treatments",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "77427",
+                "Radiation treatment management, 5 treatments"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_5",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_0_0",
+            "target": "NEGATION_0_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_1_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_1_0",
+            "target": "TEMPORAL_1_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_1_0",
+            "target": "NEGATION_1_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_2_0",
+            "target": "TEMPORAL_2_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_2_0",
+            "target": "NEGATION_2_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_3_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_3_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "DRUG_3_0",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_3_0",
+            "target": "NEGATION_3_0",
+            "label": "has_negation"
+        }
+    ]
+}

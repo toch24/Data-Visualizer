@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "psychiatric disorders",
+            "type": "CONDITION",
+            "matching": [
+                "HP",
+                "E",
+                "HP_0000708",
+                "Behavioral abnormality"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_2",
+            "label": "neurologic disorders",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "A69.22",
+                "Other neurologic disorders in Lyme disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "Musculoskeletal disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "A18.09",
+                "Other musculoskeletal tuberculosis"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        }
+    ]
+}

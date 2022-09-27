@@ -1,0 +1,573 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "NEGATION_0_0",
+            "label": "No",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "conditions affecting absorption",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "conditions affecting distribution",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "conditions affecting metabolism",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "T50.4X6",
+                "Underdosing of drugs affecting uric acid metabolism"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_3",
+            "label": "inflammatory bowel disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "24526004",
+                "Inflammatory bowel disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_4",
+            "label": "gastric ulcers",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "A66.4",
+                "Gummata and ulcers of yaws"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_5",
+            "label": "duodenal ulcers",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K26",
+                "Duodenal ulcer"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_6",
+            "label": "hepatic disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K76.5",
+                "Hepatic veno-occlusive disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_7",
+            "label": "lactose intolerance",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "E73",
+                "Lactose intolerance"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_1_0",
+            "label": "study medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_2_0",
+            "label": "surgery",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "E",
+                "1003143",
+                "Surgery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_2_1",
+            "label": "general anesthesia",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "92502",
+                "Otolaryngologic examination under general anesthesia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_2_2",
+            "label": "surgery",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "E",
+                "1003143",
+                "Surgery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_2_3",
+            "label": "colonoscopy",
+            "type": "PROCEDURE",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "45.23",
+                "Colonoscopy"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_2_4",
+            "label": "cataract surgery",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1003143",
+                "Surgery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_2_0",
+            "label": "during the study period",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_2_0",
+            "label": "neuromuscular blocking agents",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_51372",
+                "neuromuscular agent"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_1",
+            "label": "succinylcholine",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "10154",
+                "succinylcholine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_2",
+            "label": "agents",
+            "type": "DRUG",
+            "matching": [
+                "DRON",
+                "P",
+                "DRON_00012249",
+                "Lipotropic Agents"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "paralysis",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "44695005",
+                "Paralysis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_4_0",
+            "label": "prior",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_6_0",
+            "label": "concomitant",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_6_0",
+            "label": "antidepressant medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_1",
+            "label": "anticholinergic",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_48873",
+                "cholinergic antagonist"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_2",
+            "label": "tricyclic antidepressants",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_51119",
+                "tricyclic hydrocarbon"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_0",
+            "label": "major depression",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "370143000",
+                "Major depressive disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_7_0",
+            "label": "cannot swallow",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "P",
+                "87.61",
+                "Barium swallow"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_7_1",
+            "label": "difficulty swallowing whole",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "288939007",
+                "Difficulty swallowing"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_0",
+            "label": "alternative medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_1",
+            "label": "vitamins",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_33229",
+                "vitamin (role)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_2",
+            "label": "herbal products",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_77523",
+                "Maillard reaction product"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_8_0",
+            "label": "alternative medical techniques",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "92",
+                "Alternative Laboratory Platform Testing"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_8_1",
+            "label": "acupuncture",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "E",
+                "97810",
+                "Acupuncture, 1 or more needles"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_8_2",
+            "label": "acupressure",
+            "type": "PROCEDURE",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_8_0",
+            "label": "Alzheimer's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_5",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_6",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_7",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_1_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_2_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_2_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_2_2",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_2_3",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_2_4",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "PROCEDURE_2_0",
+            "target": "TEMPORAL_2_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "DRUG_6_0",
+            "target": "TEMPORAL_6_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_7_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_7_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_8_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_8_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_8_2",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_0",
+            "label": "has_condition"
+        }
+    ]
+}

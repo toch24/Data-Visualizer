@@ -1,0 +1,356 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "Alzheimer's disease (AD)",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_0",
+            "label": "Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV-TR)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA4028-2",
+                "Fourth Edition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "Mini Mental State Examination (MMSE)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044491",
+                "Mini-mental state examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_1_0",
+            "label": "less than or equal to 12 and greater than or equal to1 inclusive",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_1_0",
+            "label": "at Screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "SIB",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "35286-4",
+                "Adverse event following prior vaccination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_2_0",
+            "label": "less than or equal to 90 and",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_2_1",
+            "label": "greater than or equal to10",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_2_0",
+            "label": "at both Screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_2_1",
+            "label": "Baseline",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_3_0",
+            "label": "No",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "focal disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "L74.5",
+                "Focal hyperhidrosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_1",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_3_0",
+            "label": "cranial image",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "77417",
+                "Therapeutic radiology port image(s)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_3_1",
+            "label": "magnetic resonance imaging [MRI]",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1015088",
+                "Magnetic Resonance Imaging Guidance"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_3_2",
+            "label": "computed tomography [CT]",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1010357",
+                "Computed tomography, thorax"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PERSON_4_0",
+            "label": "male",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_4_1",
+            "label": "female",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_4_2",
+            "label": "age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_4_0",
+            "label": "greater than or equal to 50 years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_7_0",
+            "label": "donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_7_0",
+            "label": "for greater than or equal to 3 months prior to the Screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_9_0",
+            "label": "Comorbid medical conditions",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_9_0",
+            "label": "prior to Screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "TEMPORAL_1_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "VALUE_1_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "TEMPORAL_2_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "TEMPORAL_2_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "VALUE_2_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "VALUE_2_1",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_3_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_3_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_3_2",
+            "label": "has_procedure"
+        },
+        {
+            "source": "CONDITION_3_0",
+            "target": "NEGATION_3_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_4_0",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_4_1",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_4_2",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_4_2",
+            "target": "VALUE_4_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_7_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_7_0",
+            "target": "TEMPORAL_7_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_9_0",
+            "target": "TEMPORAL_9_0",
+            "label": "has_temporal"
+        }
+    ]
+}

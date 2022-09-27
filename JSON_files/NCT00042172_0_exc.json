@@ -1,0 +1,661 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "neurological disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "407624006",
+                "Suspected neurological disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "metabolic disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "75934005",
+                "Metabolic disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_2",
+            "label": "psychiatric disease",
+            "type": "CONDITION",
+            "matching": [
+                "NCIT",
+                "E",
+                "Thesaurus.owl#C2893",
+                "Psychiatric Disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_3",
+            "label": "cardiovascular disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "49601007",
+                "Disorder of cardiovascular system"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_4",
+            "label": "non-CNS oncologic disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "3428006",
+                "Oncologic"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_0_0",
+            "label": "treated",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1009299",
+                "Reduction of craniomegalic skull (eg, treated hydrocephalus)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_0_1",
+            "label": "surgically",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "59830",
+                "Treatment of septic abortion, completed surgically"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_0_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "cerebrovascular condition",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "Y95",
+                "Nosocomial condition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "Abuse alcohol",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F10.1",
+                "Alcohol abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "Abuse drugs",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F12.1",
+                "Cannabis abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "renal disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "90708001",
+                "Kidney disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_1",
+            "label": "hepatic disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K76.5",
+                "Hepatic veno-occlusive disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_2",
+            "label": "diabetes mellitus",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "250",
+                "Diabetes mellitus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_3",
+            "label": "gout",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "M10",
+                "Gout"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_4",
+            "label": "adrenocortical insufficiency",
+            "type": "CONDITION",
+            "matching": [
+                "HP",
+                "E",
+                "HP_0008207",
+                "Primary adrenal insufficiency"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "sensitive",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "83185005",
+                "Sensitive"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_4_0",
+            "label": "carbonic anhydrase inhibitors",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_23018",
+                "EC 4.2.1.1 (carbonic anhydrase) inhibitor"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_4_1",
+            "label": "antibacterial sulfonamides",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1367078",
+                "Softsoap Antibacterial"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_4_2",
+            "label": "thiazide diuretics",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_50264",
+                "thiazide"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_4_3",
+            "label": "sulfonamide-derivative diuretics",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_35358",
+                "sulfonamide"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_0",
+            "label": "donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_1",
+            "label": "GBE products",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_77523",
+                "Maillard reaction product"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "prior to enrollment",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_6_0",
+            "label": "medications",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_86327",
+                "antifungal drug"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_1",
+            "label": "herbal agents",
+            "type": "DRUG",
+            "matching": [
+                "DRON",
+                "P",
+                "DRON_00012249",
+                "Lipotropic Agents"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_2",
+            "label": "maintenance medications",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "2054316",
+                "Imvexxy 10 MCG Maintenance Pack"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_3",
+            "label": "alendronate",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "46041",
+                "alendronate"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_4",
+            "label": "Fosamax]",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "114265",
+                "Fosamax"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_5",
+            "label": "thyroid",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_9584",
+                "desiccated thyroid extract"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_6",
+            "label": "hormone",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "T125",
+                "Hormone"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_7",
+            "label": "ophthalmic medications",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1167260",
+                "BSS Ophthalmic Solution Ophthalmic Product"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_0",
+            "label": "osteoporosis",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "733.0",
+                "Osteoporosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_1",
+            "label": "glaucoma",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "H40",
+                "Glaucoma"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_2",
+            "label": "eye disorders",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "Z83.51",
+                "Family history of eye disorders"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_6_0",
+            "label": "vitamin therapy",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "T127",
+                "Vitamin"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_6_1",
+            "label": "replacement therapy",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "0316T",
+                "Vagus nerve blocking therapy (morbid obesity)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_6_2",
+            "label": "replacement",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1013913",
+                "Skin Replacement Surgery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_6_0",
+            "label": "percent",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_0_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_0_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PROCEDURE_0_1",
+            "target": "NEGATION_0_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_4_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_4_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_4_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_4_3",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_5_1",
+            "target": "TEMPORAL_5_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_3",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_4",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_5",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_6",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_7",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_6_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_6_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_6_2",
+            "label": "has_procedure"
+        },
+        {
+            "source": "DRUG_6_5",
+            "target": "VALUE_6_0",
+            "label": "has_value"
+        }
+    ]
+}

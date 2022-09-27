@@ -1,0 +1,83 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "DRUG_0_0",
+            "label": "Aricept",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135446",
+                "Aricept"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DEVICE_0_0",
+            "label": "pacemakers",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "insulin dependent",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "28032008",
+                "Insulin dependent diabetes mellitus type 1B"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "diabetes",
+            "type": "CONDITION",
+            "matching": [
+                "NCIT",
+                "E",
+                "Thesaurus.owl#C2985",
+                "Diabetes Mellitus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_0_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "DRUG_0_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_0_1",
+            "target": "NEGATION_0_0",
+            "label": "has_negation"
+        }
+    ]
+}

@@ -1,0 +1,416 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "delusions",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "2073000",
+                "Delusions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "conscious dysfunction",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "Z76.5",
+                "Malingerer [conscious simulation]"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "neurologic diseases",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "R41.4",
+                "Neurologic neglect syndrome"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "Parkinson's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G20",
+                "Parkinson's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "stroke",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "230690007",
+                "Cerebrovascular accident"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_3",
+            "label": "tumor",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "108369006",
+                "Neoplasm"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_4",
+            "label": "normal pressure hydrocephalus",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "30753002",
+                "Normal pressure hydrocephalus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_1_0",
+            "label": "neurologic examination",
+            "type": "PROCEDURE",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "89.13",
+                "Neurologic examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "infectious brain disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "B99.9",
+                "Unspecified infectious disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "inflammatory brain disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K75.9",
+                "Inflammatory liver disease, unspecified"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_2",
+            "label": "virus",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "T005",
+                "Virus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_3",
+            "label": "fungus",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "T004",
+                "Fungus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_4",
+            "label": "syphilis",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "76272004",
+                "Syphilis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "cerebrovascular pathology",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "I67.81",
+                "Acute cerebrovascular insufficiency"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "psychological diseases",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "T76.3",
+                "Psychological abuse, suspected"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_1",
+            "label": "depression",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "255339005",
+                "Depression - motion"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_2",
+            "label": "mania",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "231494001",
+                "Mania"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_4_0",
+            "label": "DSM-IV criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_5_0",
+            "label": "alcoholism",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "7200002",
+                "Alcoholism"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_5_1",
+            "label": "drug addiction",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "6525002",
+                "Dependent drug abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_0",
+            "label": "depressive symptoms",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "394924000",
+                "Symptoms of depression"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_1",
+            "label": "cognition",
+            "type": "CONDITION",
+            "matching": [
+                "NCIT",
+                "E",
+                "Thesaurus.owl#C16446",
+                "Cognition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_6_0",
+            "label": "depression scale of CERAD-",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU049614",
+                "Depression scale"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_6_0",
+            "label": "K",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_1_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_4_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_5_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_5_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_6_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_6_0",
+            "target": "VALUE_6_0",
+            "label": "has_value"
+        }
+    ]
+}
