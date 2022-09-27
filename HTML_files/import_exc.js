@@ -1,4 +1,4 @@
-var import_file = function(json_file) {
+var import_file_exc = function(json_file) {
     //copying the content of nodes and links 
     var nodes = [...json_file.nodes]
     var links = [...json_file.links]
@@ -10,7 +10,45 @@ var import_file = function(json_file) {
       }
     }
 
-    console.log(links)
+    document.getElementById("exportJSON_exc").onclick = function(){
+      downloadHandler(this);
+    }
+
+    function downloadHandler(el){
+      if(json_file != null || files != null){
+        let f = JSON.parse(JSON.stringify(json_file));
+        
+        for(var i = 0; i < f.nodes.length; i++){
+          delete f.nodes[i].vx
+          delete f.nodes[i].vy
+          delete f.nodes[i].x
+          delete f.nodes[i].y
+          delete f.nodes[i].index
+        }
+  
+        for(var i = 0; i < f.links.length; i++){
+          delete f.links[i].source.vx
+          delete f.links[i].source.vy
+          delete f.links[i].source.x
+          delete f.links[i].source.y
+          delete f.links[i].target.vx
+          delete f.links[i].target.vy
+          delete f.links[i].target.x
+          delete f.links[i].target.y
+          delete f.links[i].target.index
+          delete f.links[i].source.index
+        }
+  
+        var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(f));
+        el.setAttribute('href', 'data:' + data)
+        el.setAttribute('download', files[0].name)
+      }
+      else{
+        alert("Nothing to download!")
+      }
+  
+    }
+
     // Define menu
 		var menu = [
 			{
@@ -59,7 +97,7 @@ function createLink(){
 
   links.push(obj)
   json_file.links.push(obj)
-  import_file(json_file)
+  import_file_exc(json_file)
 
 /*  reDraw(
   simulation.force("link").links(links)
@@ -100,7 +138,7 @@ function createNode(){
     nodes.push(obj)
     json_file.nodes.push(obj)
     console.log(nodes)
-    import_file(json_file)
+    import_file_exc(json_file)
 
     untoggleNodeModal()
   }
@@ -228,7 +266,7 @@ function getTextColor(node, neighbors) {
     var height = window.innerHeight
 
 
-var svg = d3.select('svg')
+let svg = d3.select("#exc")
 svg.attr('width', width).attr('height', height)
 svg.on('contextmenu', d3.contextMenu(add_link))
 svg.selectAll('*').remove();
@@ -312,7 +350,7 @@ function removeNode(d, event) {
   var nodeIndex = json_file.nodes.indexOf(d)
   json_file.nodes.splice(nodeIndex, 1)
 
-  import_file(json_file)
+  import_file_exc(json_file)
 }
 
 function removeLink(d, event){

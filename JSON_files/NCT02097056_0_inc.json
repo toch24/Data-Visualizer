@@ -1,0 +1,477 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "Male",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_1",
+            "label": "female",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_2",
+            "label": "aged",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "45 to 90 years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "DSM",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "Alzheimer's Disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "NINCDS-ADRDA criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "At the timing of screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_3_0",
+            "label": "MMSE",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP156471-7",
+                "Mini-Mental Status Examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_3_1",
+            "label": "CDR",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP156476-6",
+                "Clinical Dementia Rating Scale"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_3_2",
+            "label": "GDS",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP62735-3",
+                "GDS"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_3_0",
+            "label": "less than or equal to 20",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_3_1",
+            "label": "greater than or equal to 2",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_3_2",
+            "label": "greater than or equal to 4",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_4_0",
+            "label": "donepezil 10",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "997219",
+                "donepezil hydrochloride 10 MG"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_4_1",
+            "label": "donepezil 23 mg",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "998579",
+                "donepezil hydrochloride 23 MG"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_4_0",
+            "label": "for 3 months or longer before the start of the study (screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_5_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_5_1",
+            "label": "excluding",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_5_0",
+            "label": "other",
+            "type": "DRUG",
+            "matching": [
+                "ATC",
+                "P",
+                "C05AX03",
+                "other preparations, combinations"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_1",
+            "label": "medications for",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1429028",
+                "AmproMed for Calves"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_2",
+            "label": "AD",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_73803",
+                "Ala-Asp"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_3",
+            "label": "AChE inhibitors",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "629024",
+                "By Ache"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_4",
+            "label": "donepezil hydrochloride",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "236559",
+                "donepezil hydrochloride"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_5",
+            "label": "memantine",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "6719",
+                "memantine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "at least for 3 months prior to the screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_5_1",
+            "label": "for at least 3 months prior to screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_5_0",
+            "label": "than or equal to",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_6_0",
+            "label": "Medicines for cerebral activation",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1311317",
+                "Sus scrofa cerebral cortex preparation"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_1",
+            "label": "Gingko Biloba",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "236809",
+                "Ginkgo biloba extract"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_6_0",
+            "label": "for 3 months prior to the screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_1",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_2",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_2",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "VALUE_3_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_3_1",
+            "target": "VALUE_3_1",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_3_2",
+            "target": "VALUE_3_2",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_4_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_4_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_4_0",
+            "target": "TEMPORAL_4_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_3",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_4",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_5",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_5_3",
+            "target": "TEMPORAL_5_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_5_5",
+            "target": "TEMPORAL_5_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_5_5",
+            "target": "VALUE_5_0",
+            "label": "has_value"
+        },
+        {
+            "source": "DRUG_5_0",
+            "target": "NEGATION_5_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "DRUG_5_4",
+            "target": "NEGATION_5_1",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_6_1",
+            "target": "TEMPORAL_6_0",
+            "label": "has_temporal"
+        }
+    ]
+}
