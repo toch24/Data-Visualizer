@@ -262,9 +262,6 @@ function getLinkColor(node, link) {
   return isNeighborLink(node, link) ? 'green' : '#E5E5E5'
 }
 
-function getVisibility(node, link){
-    return isNeighborLink(node, link) ? 'visible' : 'hidden'
-}
 
 function getTextColor(node, neighbors) {
   return Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1 ? 'green' : 'black'
@@ -410,7 +407,6 @@ function selectNode(selectedNode) {
   nodeElements.attr('fill', function (node) { return getNodeColor(node, neighbors) })
   textElements.attr('fill', function (node) { return getTextColor(node, neighbors) })
   linkElements.attr('stroke', function (link) { return getLinkColor(selectedNode, link) })
-  textLinks.attr('visibility', function (link) { return getVisibility(selectedNode, link)})
 
 }
 
@@ -456,8 +452,7 @@ var textLinks = g_textLink
             .style("font", "normal 12px Arial")
             .attr("dy", ".35em")
             .text(function(d) { return d.label; })
-    .attr("visibility", "hidden")
-    
+
   
 
   simulation.nodes(nodes).on('tick', () => {
