@@ -1,0 +1,151 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "Alzheimer's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_0",
+            "label": "probability criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA28479-6",
+                "Low probability"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_1",
+            "label": "Alzheimer's Disease",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP74474-5",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_2",
+            "label": "Related Disorders Association",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA31343-9",
+                "Related"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_1_0",
+            "label": "Rated",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_1_1",
+            "label": "1 and 2",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_1_2",
+            "label": "mild to moderate level",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "of the",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA31293-6",
+                "Invasion of the submucosa, but limited to the head of the polyp"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_1",
+            "label": "Clinical Dementia Rating",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044678",
+                "Clinical dementia rating scale"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "VALUE_1_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "VALUE_1_1",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "VALUE_1_2",
+            "label": "has_value"
+        }
+    ]
+}

@@ -1,0 +1,719 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "Vascular dementia",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "F01.5",
+                "Vascular dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "of dementia",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "G31.0",
+                "Frontotemporal dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_2",
+            "label": "psychiatric disorders",
+            "type": "CONDITION",
+            "matching": [
+                "HP",
+                "E",
+                "HP_0000708",
+                "Behavioral abnormality"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_3",
+            "label": "neurological disorders",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "P",
+                "713.5",
+                "Arthropathy associated with neurological disorders"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_4",
+            "label": "delirium",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "2776000",
+                "Delirium"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_5",
+            "label": "depression",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "255339005",
+                "Depression - motion"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_6",
+            "label": "Parkinson's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G20",
+                "Parkinson's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "type I diabetes",
+            "type": "CONDITION",
+            "matching": [
+                "HP",
+                "E",
+                "HP_0100651",
+                "Type I diabetes mellitus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "obstructive lung disease",
+            "type": "CONDITION",
+            "matching": [
+                "DOID",
+                "E",
+                "DOID_2320",
+                "obstructive lung disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "asthma",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "J45",
+                "Asthma"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_3",
+            "label": "vitamin B12",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "419382002",
+                "Cyanocobalamin"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_4",
+            "label": "folic acid deficiency",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "E53.8",
+                "Deficiency of other specified B group vitamins"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_5",
+            "label": "thyroid dysfunction",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "264580006",
+                "Thyroid dysfunction"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_6",
+            "label": "liver dysfunction",
+            "type": "CONDITION",
+            "matching": [
+                "HP",
+                "E",
+                "HP_0001410",
+                "Decreased liver function"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_7",
+            "label": "kidney dysfunction",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H83.2",
+                "Labyrinthine dysfunction"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_8",
+            "label": "cardiac insufficiency",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "84114007",
+                "Heart failure"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_9",
+            "label": "congestive heart-failure",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "I50.3",
+                "Diastolic (congestive) heart failure"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_10",
+            "label": "myocardial infarction",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "22298006",
+                "Myocardial infarction"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_11",
+            "label": "Sick Sinus Syndrome",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "I49.5",
+                "Sick sinus syndrome"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_12",
+            "label": "atrioventricular block",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "233917008",
+                "Atrioventricular block"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "heart rate",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "MTHU003114",
+                "Heart rate"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_1_0",
+            "label": "<50bpm",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "Epilepsy",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "84757009",
+                "Epilepsy"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "head trauma",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K08.81",
+                "Primary occlusal trauma"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_2",
+            "label": "unconsciousness",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "418107008",
+                "Unconscious"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_2_0",
+            "label": "in the past two years",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "Blood diseases",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "D75.89",
+                "Other specified diseases of blood and blood-forming organs"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_1",
+            "label": "anemia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "271737000",
+                "Anemia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_2",
+            "label": "granulocytes",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "709253000",
+                "Granulocyte component of blood"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_3",
+            "label": "leukemia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "93143009",
+                "Leukemia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_4",
+            "label": "tumor",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "108369006",
+                "Neoplasm"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_5",
+            "label": "Hematologic Disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "34093004",
+                "Disorder of hematopoietic system"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_6",
+            "label": "neoplasms",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "140-239.99",
+                "NEOPLASMS"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "within past 2 years",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "alcohol dependence",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "F10.2",
+                "Alcohol dependence"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_1",
+            "label": "drug abuse",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "26416006",
+                "Drug abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_5_0",
+            "label": "hypersensitivity",
+            "type": "CONDITION",
+            "matching": [
+                "DOID",
+                "E",
+                "DOID_1205",
+                "allergic disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_0",
+            "label": "medicines",
+            "type": "DRUG",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "DRUG_5_1",
+            "label": "foods",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_33290",
+                "food"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_0",
+            "label": "anticholinergic agents",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_48873",
+                "cholinergic antagonist"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_6_1",
+            "label": "antihistaminic agents",
+            "type": "DRUG",
+            "matching": [
+                "DRON",
+                "P",
+                "DRON_00012249",
+                "Lipotropic Agents"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_7_0",
+            "label": "hospitalized",
+            "type": "PROCEDURE",
+            "matching": [
+                "ICD9CM",
+                "P",
+                "V30.2",
+                "Single liveborn, born outside hospital and not hospitalized"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_7_0",
+            "label": "for more than 3 months before screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_5",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_6",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_5",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_6",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_7",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_8",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_9",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_10",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_11",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_12",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "VALUE_1_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_2_2",
+            "target": "TEMPORAL_2_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_5",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_6",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_3_6",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_5_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_5_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_6_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_7_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PROCEDURE_7_0",
+            "target": "TEMPORAL_7_0",
+            "label": "has_temporal"
+        }
+    ]
+}

@@ -1,0 +1,247 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_1_0",
+            "label": "male",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_1_1",
+            "label": "female",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_1_2",
+            "label": "age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_1_0",
+            "label": "50 to 90 years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "Alzheimer's Disease (AD)",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition, Text Revision (DSM-IV-TR)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA4028-2",
+                "Fourth Edition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_1",
+            "label": "National Institute of Neurological and Communicative Disorders and Stroke-Alzheimer's Disease and Related Disorders Association (NINCDS-ADRDA) criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA10590-0",
+                "Neurological Disorders"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_3_0",
+            "label": "MMSE",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP156471-7",
+                "Mini-Mental Status Examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_3_0",
+            "label": "1 to 12 inclusive",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "at both Screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_3_1",
+            "label": "Baseline",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_4_0",
+            "label": "SIB",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "35286-4",
+                "Adverse event following prior vaccination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_4_0",
+            "label": "less than or equal to 90 and greater than or equal to 10",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_4_0",
+            "label": "at both Screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_4_1",
+            "label": "Baseline",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_5_0",
+            "label": "Comorbid medical conditions",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "prior to Baseline",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_1_0",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_1",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_2",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_1_2",
+            "target": "VALUE_1_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "TEMPORAL_3_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_3_0",
+            "target": "VALUE_3_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_4_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_4_0",
+            "target": "TEMPORAL_4_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_4_0",
+            "target": "TEMPORAL_4_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_4_0",
+            "target": "VALUE_4_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_5_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_5_0",
+            "target": "TEMPORAL_5_0",
+            "label": "has_temporal"
+        }
+    ]
+}

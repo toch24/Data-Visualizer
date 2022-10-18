@@ -1,0 +1,163 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "sex",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_1",
+            "label": "age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "55-95 years old",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "Alzheimer's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "AD dementia",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "G31.0",
+                "Frontotemporal dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "amnestic",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F04",
+                "Amnestic disorder due to known physiological condition"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_3",
+            "label": "nonamnestic",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F10.97",
+                "Alcohol use, unspecified with alcohol-induced persisting dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "NINCDS-ADRDA criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP96829-4",
+                "Data criteria"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "Folstein Mini Mental State (MMSE) score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU044491",
+                "Mini-mental state examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_2_0",
+            "label": "18-27 out of 30",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_gender"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_1",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_1",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "VALUE_2_0",
+            "label": "has_value"
+        }
+    ]
+}

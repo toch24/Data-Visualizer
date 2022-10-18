@@ -1,0 +1,30 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "Alzheimer's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        }
+    ]
+}

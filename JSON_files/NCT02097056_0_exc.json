@@ -1,0 +1,93 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "psychiatric disorder",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "74732009",
+                "Mental disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "schizophrenia",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "F20",
+                "Schizophrenia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "neurological disorder",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "118940003",
+                "Disorder of nervous system"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_2_0",
+            "label": "other than",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_2_0",
+            "target": "NEGATION_2_0",
+            "label": "has_negation"
+        }
+    ]
+}

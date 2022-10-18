@@ -1,0 +1,231 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "disorders that affect cognition",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F48.2",
+                "Pseudobulbar affect"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_0_0",
+            "label": "distinguishable from",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "organic disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "J66",
+                "Airway disease due to specific organic dust"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_3",
+            "label": "delirium",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "2776000",
+                "Delirium"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "hypersensitivity",
+            "type": "CONDITION",
+            "matching": [
+                "DOID",
+                "E",
+                "DOID_1205",
+                "allergic disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_0",
+            "label": "donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_1",
+            "label": "piperidine derivatives",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_18049",
+                "piperidine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_2",
+            "label": "drug",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_23888",
+                "drug"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "within 24 weeks after randomization",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_4_0",
+            "label": "Memantine",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "6719",
+                "memantine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_4_0",
+            "label": "for at least 6 months prior to Screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_0_1",
+            "target": "NEGATION_0_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_4_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_4_0",
+            "target": "TEMPORAL_4_0",
+            "label": "has_temporal"
+        }
+    ]
+}

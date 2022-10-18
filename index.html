@@ -2,55 +2,40 @@
 <html>
 
 <head>
-    <meta charset="utf-8">    
-    <link href="./d3-context-menu.css" rel="stylesheet">
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="./d3-context-menu.js"></script>
-    <link rel="stylesheet" href="index.css">
-
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
 </head>
 
+
 <body>
-  <div id="buttons">
-    <div>
-  <input type="file" id="selectFiles" value="Import" /><br />
-  </div>
-  <div>
-  <button id="import">Import</button>
-  </div>
-  <div>
-    <a id="exportJSON" onclick= downloadHandler(this) class="btn"><button>Download!</button></a>
-  </div>
-  </div>
-
-    <svg width="600" height="600"></svg>
-    <div id="modal" class="modal">
-        <div id="modal-content" class="modal-content">
-            <span id="close-button" class="close-button">&times;</span>
-            <h1>Create link between existing nodes</h1>
-        </div>
-    </div>
-
-    <div id="modal_node" class="modal_node">
-      <div id="modal-node" class="modal-node">
-          <span id="close-button" class="close-button">&times;</span>
-          <h1>Create a new node</h1>
-      </div>
-  </div>
+  <h1>DATA VISUALIZER</h1>
+  <div class="hold">
+  
+  <a href = "HTML_files/NCT00042172_0.html"> NCT00042172_0 </a>
+  <a href = "HTML_files/NCT00096473_0.html"> NCT00096473_0 </a>
+  <a href = "HTML_files/NCT00165724_0.html"> NCT00165724_0 </a>
+  <a href = "HTML_files/NCT00230568_0.html"> NCT00230568_0 </a>
+  <a href = "HTML_files/NCT00267163_0.html"> NCT00267163_0 </a> 
+  <a href = "HTML_files/NCT02097056_0.html"> NCT02097056_0 </a>
+  <a href = "HTML_files/NCT00381381_0.html"> NCT00381381_0 </a>
+  <a href = "HTML_files/NCT00403520_0.html"> NCT00403520_0 </a>
+  <a href = "HTML_files/NCT00477659_0.html"> NCT00477659_0 </a>
+  <a href = "HTML_files/NCT00478205_0.html"> NCT00478205_0 </a>
+  <a href = "HTML_files/NCT00480870_0.html"> NCT00480870_0 </a> 
+  <a href = "HTML_files/NCT00566501_0.html"> NCT00566501_0 </a> 
+  <a href = "HTML_files/NCT00571064_0.html"> NCT00571064_0 </a> 
+  <a href = "HTML_files/NCT00630851_0.html"> NCT00630851_0 </a> 
+  <a href = "HTML_files/NCT01404169_0.html"> NCT01404169_0 </a> 
+  <a href = "HTML_files/NCT01539031_0.html"> NCT01539031_0 </a> 
+  <a href = "HTML_files/NCT01951118_0.html"> NCT01951118_0 </a> 
+  <a href = "HTML_files/NCT01951118_1.html"> NCT01951118_1 </a> 
+  <a href = "HTML_files/NCT02550665_0.html"> NCT02550665_0 </a> 
+  <a href = "HTML_files/NCT02787746_0.html"> NCT02787746_0 </a>
+  <a href = "HTML_files/NCT03073876_0.html"> NCT03073876_0 </a>
+  <a href = "HTML_files/NCT03197740_0.html"> NCT03197740_0 </a>
+</div>
 
 </body>
-
-<script type = 'text/javascript' src="main.js"></script>
-<script type = 'text/javascript' src="import.js"></script>
-<script>
-const modal = document.querySelector(".modal");
-const modal_content = document.querySelector(".modal-content")
-const modal_node = document.querySelector(".modal_node")
-const modal_node_content = document.querySelector(".modal-node");
-const closeButton = document.querySelector(".close-button");
-main_function()
-</script>
-
     
 
 </html>

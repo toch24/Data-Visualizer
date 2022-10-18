@@ -1,0 +1,1119 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "Age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "< 50 years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "MMSE score",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP124270-2",
+                "SCORE"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_1_0",
+            "label": "< 10 or > 26",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "conditions affecting absorption",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "conditions affecting distribution",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "H05.2",
+                "Exophthalmic conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_2",
+            "label": "conditions affecting metabolism",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "T50.4X6",
+                "Underdosing of drugs affecting uric acid metabolism"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_3",
+            "label": "inflammatory bowel disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "24526004",
+                "Inflammatory bowel disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_4",
+            "label": "gastric ulcers",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "A66.4",
+                "Gummata and ulcers of yaws"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_5",
+            "label": "duodenal ulcers",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K26",
+                "Duodenal ulcer"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_6",
+            "label": "lactose intolerance",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "E73",
+                "Lactose intolerance"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_0",
+            "label": "study medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "hypersensitivity",
+            "type": "CONDITION",
+            "matching": [
+                "DOID",
+                "E",
+                "DOID_1205",
+                "allergic disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_3_0",
+            "label": "piperidine derivatives",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_18049",
+                "piperidine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_3_1",
+            "label": "cholinesterase inhibitors",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_38462",
+                "EC 3.1.1.7 (acetylcholinesterase) inhibitor"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "within the next 3 months",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_6_0",
+            "label": "obstructive pulmonary disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "J44.9",
+                "Chronic obstructive pulmonary disease, unspecified"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_1",
+            "label": "asthma",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "J45",
+                "Asthma"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_6_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PROCEDURE_6_0",
+            "label": "treatment",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1010875",
+                "Radiation Treatment Delivery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_6_0",
+            "label": "at any time during the previous 3 months",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_7_0",
+            "label": "recent",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_7_1",
+            "label": "< 2 years",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_7_0",
+            "label": "hematological disorders",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "P61",
+                "Other perinatal hematological disorders"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_7_1",
+            "label": "oncological disorders",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "F50",
+                "Eating disorders"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_8_0",
+            "label": "gastrointestinal system disease",
+            "type": "CONDITION",
+            "matching": [
+                "DOID",
+                "E",
+                "DOID_77",
+                "gastrointestinal system disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_8_1",
+            "label": "renal system disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "N18.6",
+                "End stage renal disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_8_2",
+            "label": "hepatic system disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "K76.5",
+                "Hepatic veno-occlusive disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_8_3",
+            "label": "endocrine system disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "362969004",
+                "Disorder of endocrine system"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_8_4",
+            "label": "cardiovascular system disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "49601007",
+                "Disorder of cardiovascular system"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_9_0",
+            "label": "Major Depressive Disorder (MDD)",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "370143000",
+                "Major depressive disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_9_1",
+            "label": "primary",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "63161005",
+                "Principal"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_9_2",
+            "label": "psychiatric diagnosis",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "P",
+                "94.2",
+                "Psychiatric somatotherapy"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_9_3",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_9_0",
+            "label": "other than",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_10_0",
+            "label": "dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_1",
+            "label": "delirium",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "2776000",
+                "Delirium"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_2",
+            "label": "depression",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "255339005",
+                "Depression - motion"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_3",
+            "label": "delusions",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "2073000",
+                "Delusions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_10_0",
+            "label": "DSM",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_10_0",
+            "label": "290.30",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_11_0",
+            "label": "alcoholism",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "7200002",
+                "Alcoholism"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_11_1",
+            "label": "drug abuse",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "26416006",
+                "Drug abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_11_0",
+            "label": "within the past 5 years",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_12_0",
+            "label": "vitamin B-12 deficiency",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "E53.9",
+                "Vitamin B deficiency, unspecified"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_12_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_12_1",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_12_0",
+            "label": "medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_12_0",
+            "label": "for at least 3 months prior to the study screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_12_1",
+            "label": "at screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_12_0",
+            "label": "normal",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_12_0",
+            "label": "serum B-12 levels",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP268044-7",
+                "2 levels"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_13_0",
+            "label": "hypothyroidism",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "40930008",
+                "Hypothyroidism"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_13_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_13_1",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_13_0",
+            "label": "medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_13_0",
+            "label": "for 3 months prior to screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_13_1",
+            "label": "at screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_13_0",
+            "label": "normal",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_13_0",
+            "label": "serum T-4",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP395934-5",
+                "Chloramin T IgE &#x7C"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_13_1",
+            "label": "serum TSH",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "55462-6",
+                "TSH"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_14_0",
+            "label": "diabetes mellitus",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "250",
+                "Diabetes mellitus"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_14_0",
+            "label": "diet",
+            "type": "DRUG",
+            "matching": [
+                "DRON",
+                "P",
+                "DRON_00074036",
+                "Phenylpropanolamine 75 MG Extended Release Tablet [Diet Caplets]"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_14_1",
+            "label": "oral medication",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "1491644",
+                "Clear Proof Acne Medication"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_14_2",
+            "label": "insulin",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_145810",
+                "insulin"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_14_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_14_0",
+            "label": "HbA1c",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "55454-3",
+                "HbA1c (Bld)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_14_1",
+            "label": "random serum glucose value",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP157271-0",
+                "Glucose in serum"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_14_0",
+            "label": "< 8.0%",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_14_1",
+            "label": "< 170 mg/dl",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_15_0",
+            "label": "previously",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_15_0",
+            "label": "Aricept",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135446",
+                "Aricept"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_15_1",
+            "label": "donepezil Hydrochloride",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "236559",
+                "donepezil hydrochloride"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_0",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "VALUE_1_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_5",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_6",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_3_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_3_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_6_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PROCEDURE_6_0",
+            "target": "TEMPORAL_6_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "CONDITION_6_1",
+            "target": "NEGATION_6_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_7_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_7_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_7_0",
+            "target": "TEMPORAL_7_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "CONDITION_7_0",
+            "target": "TEMPORAL_7_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_8_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_9_2",
+            "target": "NEGATION_9_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_10_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_10_0",
+            "target": "VALUE_10_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_11_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_11_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_11_1",
+            "target": "TEMPORAL_11_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_12_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_12_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_12_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "DRUG_12_0",
+            "target": "TEMPORAL_12_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_12_0",
+            "target": "TEMPORAL_12_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_12_0",
+            "target": "VALUE_12_0",
+            "label": "has_value"
+        },
+        {
+            "source": "CONDITION_12_0",
+            "target": "NEGATION_12_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "MEASUREMENT_12_0",
+            "target": "NEGATION_12_1",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_13_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_13_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_13_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_13_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "DRUG_13_0",
+            "target": "TEMPORAL_13_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_13_0",
+            "target": "TEMPORAL_13_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "MEASUREMENT_13_0",
+            "target": "VALUE_13_0",
+            "label": "has_value"
+        },
+        {
+            "source": "CONDITION_13_0",
+            "target": "NEGATION_13_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "MEASUREMENT_13_0",
+            "target": "NEGATION_13_1",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_14_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_14_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_14_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_14_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_14_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_14_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_14_0",
+            "target": "VALUE_14_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_14_1",
+            "target": "VALUE_14_1",
+            "label": "has_value"
+        },
+        {
+            "source": "DRUG_14_2",
+            "target": "NEGATION_14_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_15_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_15_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_15_0",
+            "target": "TEMPORAL_15_0",
+            "label": "has_temporal"
+        }
+    ]
+}

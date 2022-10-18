@@ -1,0 +1,156 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "neurological diagnosis",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "439401001",
+                "Diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "psychiatric diagnosis",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "P",
+                "94.2",
+                "Psychiatric somatotherapy"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_2",
+            "label": "depressive disorder",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "35489007",
+                "Depressive disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_3",
+            "label": "Alzheimer's Disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_0_0",
+            "label": "other than",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "Dementia",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52448006",
+                "Dementia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "organic diseases",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "N46.01",
+                "Organic azoospermia"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "Alzheimer's Disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_1_0",
+            "label": "other than",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_0_3",
+            "target": "NEGATION_0_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "CONDITION_1_1",
+            "target": "NEGATION_1_0",
+            "label": "has_negation"
+        }
+    ]
+}

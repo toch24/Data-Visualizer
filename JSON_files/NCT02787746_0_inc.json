@@ -1,0 +1,375 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "50 \u2264 years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_0_1",
+            "label": "< 85years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "NINCDS- ADRDA",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_1",
+            "label": "MMSE",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_2",
+            "label": "modified Hachinski ischaemic scale (MHIS)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP186223-6",
+                "Modified rankin scale"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_3",
+            "label": "ADL",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU021120",
+                "ADL patterns"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_1_4",
+            "label": "HAMD",
+            "type": "MEASUREMENT",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_1_0",
+            "label": "10-24",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_1_1",
+            "label": "\u22644",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_1_2",
+            "label": "\u226523",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_1_3",
+            "label": "<7",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PROCEDURE_2_0",
+            "label": "MRI image",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "77417",
+                "Therapeutic radiology port image(s)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_0",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_2_1",
+            "label": "medial temporal lobe atrophy",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "P",
+                "C71.2",
+                "Malignant neoplasm of temporal lobe"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "Fazekas scale of white matter lesions",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA4457-3",
+                "White"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_2_0",
+            "label": "\u22642",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DRUG_3_0",
+            "label": "Donepezil",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135447",
+                "donepezil"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "for at least four weeks before enrollment",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_5_0",
+            "label": "freely",
+            "type": "CONDITION",
+            "matching": [
+                "NCIT",
+                "E",
+                "Thesaurus.owl#C64636",
+                "As Much as Desired"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DEVICE_5_0",
+            "label": "walking",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_6_0",
+            "label": "good",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_6_0",
+            "label": "eyesight",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "401010000",
+                "Patient concerned about eyesight"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_6_1",
+            "label": "hearing",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "47078008",
+                "Hearing"
+            ],
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_0",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "PERSON_0_0",
+            "target": "VALUE_0_1",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_3",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_4",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_1_1",
+            "target": "VALUE_1_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_1_2",
+            "target": "VALUE_1_1",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_1_3",
+            "target": "VALUE_1_2",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_1_4",
+            "target": "VALUE_1_3",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_2_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_2_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "VALUE_2_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_3_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_3_0",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_5_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_6_1",
+            "label": "has_condition"
+        }
+    ]
+}

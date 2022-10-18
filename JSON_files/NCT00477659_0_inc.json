@@ -1,0 +1,216 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "Men",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_1",
+            "label": "women",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_2",
+            "label": "aged",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "50 and older",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_0_1",
+            "label": "scores",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_0_2",
+            "label": "20 to 30",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_0_0",
+            "label": "mild",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "255604002",
+                "Mild"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_0_1",
+            "label": "Alzheimer's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_0_0",
+            "label": "MMSE",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LP156471-7",
+                "Mini-Mental Status Examination"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "Alzheimer's disease",
+            "type": "CONDITION",
+            "matching": [
+                "ICD10CM",
+                "E",
+                "G30",
+                "Alzheimer's disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_0",
+            "label": "cholinesterase inhibitors",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_38462",
+                "EC 3.1.1.7 (acetylcholinesterase) inhibitor"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_1",
+            "label": "Aricept",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "135446",
+                "Aricept"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_2_2",
+            "label": "memantine",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "6719",
+                "memantine"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_2_0",
+            "label": "other than",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_1",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_2",
+            "label": "has_age"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_0_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_0_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "PERSON_0_2",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_0_0",
+            "target": "VALUE_0_1",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_0_0",
+            "target": "VALUE_0_2",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_2_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_2_1",
+            "target": "NEGATION_2_0",
+            "label": "has_negation"
+        }
+    ]
+}

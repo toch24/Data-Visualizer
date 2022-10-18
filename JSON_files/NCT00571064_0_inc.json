@@ -1,0 +1,1098 @@
+{
+    "nodes": [
+        {
+            "id": "T0",
+            "label": "PATIENTS",
+            "type": "Patients",
+            "matching": [],
+            "level": 1
+        },
+        {
+            "id": "PERSON_0_0",
+            "label": "Age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_0_1",
+            "label": "age",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_0_0",
+            "label": "> 50 years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PERSON_1_0",
+            "label": "Sex",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_1_1",
+            "label": "men",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_1_2",
+            "label": "women",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_1_3",
+            "label": "Women",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_1_4",
+            "label": "Women",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "PERSON_1_5",
+            "label": "Women",
+            "type": "PERSON",
+            "matching": [],
+            "level": 2
+        },
+        {
+            "id": "VALUE_1_0",
+            "label": "two (2) years",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_1_1",
+            "label": "negative",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_1_0",
+            "label": "post",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "288563008",
+                "After values"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_1",
+            "label": "surgically",
+            "type": "CONDITION",
+            "matching": [
+                "NCIT",
+                "E",
+                "Thesaurus.owl#C15329",
+                "Surgical Procedure"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_1_2",
+            "label": "child",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "67822003",
+                "Child"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PREGNANCY_CONSIDERATIONS_1_0",
+            "label": "-menopausal or",
+            "type": "PREGNANCY_CONSIDERATIONS",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PREGNANCY_CONSIDERATIONS_1_1",
+            "label": "sterile",
+            "type": "PREGNANCY_CONSIDERATIONS",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PREGNANCY_CONSIDERATIONS_1_2",
+            "label": "of",
+            "type": "PREGNANCY_CONSIDERATIONS",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PREGNANCY_CONSIDERATIONS_1_3",
+            "label": "bearing potential (< 1 year post menopausal) must be practicing effective contraception and have a",
+            "type": "PREGNANCY_CONSIDERATIONS",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PREGNANCY_CONSIDERATIONS_1_4",
+            "label": "\u00df",
+            "type": "PREGNANCY_CONSIDERATIONS",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PREGNANCY_CONSIDERATIONS_1_5",
+            "label": "at screening",
+            "type": "PREGNANCY_CONSIDERATIONS",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PREGNANCY_CONSIDERATIONS_1_6",
+            "label": "who are breast feeding are excluded",
+            "type": "PREGNANCY_CONSIDERATIONS",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_1_0",
+            "label": "-hCG",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP32696-4",
+                "HCG"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_2_0",
+            "label": "MMSE scores",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU042520",
+                "OPTIMAL change scores - confidence"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_2_0",
+            "label": "between 5 and 24",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_3_0",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_3_0",
+            "label": "either prior to or at the screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_3_0",
+            "label": "Diagnostic and Statistical Manual of Mental Disorders-IV (DSM-IV)",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP73613-9",
+                "VA C and P exam.general mental disorders"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_3_1",
+            "label": "National Institute of Neurological",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP419586-5",
+                "National Institute of Drug Abuse"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_3_2",
+            "label": "Communicative Disorders",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "MTHU021526",
+                "Communicative limitation"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_3_3",
+            "label": "Stroke criteria",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA22099-8",
+                "Stroke"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_4_0",
+            "label": "CT",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "E",
+                "CT",
+                "Computed tomography services furnished using equipment that does not meet each of the attributes of the national electrical manufacturers association (nema) xr-29-2013 standard"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_4_1",
+            "label": "MRI",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1014877",
+                "Magnetic resonance imaging, brain, functional MRI"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_4_2",
+            "label": "or MRI",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "3324F",
+                "MRI or CT scan ordered, reviewed or requested (EPI)"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_4_0",
+            "label": "within the last 12 months",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_4_1",
+            "label": "between the time of the last CT",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_4_2",
+            "label": "and the screening evaluation",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_4_0",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_1",
+            "label": "comorbid pathologies",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "398192003",
+                "Co-morbid conditions"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_2",
+            "label": "stroke",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "230690007",
+                "Cerebrovascular accident"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_3",
+            "label": "neurological disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "P",
+                "407624006",
+                "Suspected neurological disease"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_4_4",
+            "label": "AD",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "52870002",
+                "Admitting diagnosis"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_4_0",
+            "label": "without",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_5_0",
+            "label": "at least 6 Weeks prior to study entry",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "PROCEDURE_7_0",
+            "label": "procedures",
+            "type": "PROCEDURE",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "00-99.99",
+                "PROCEDURES"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_0",
+            "label": "Putative non-prescription",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "216284",
+                "Cruex Prescription Strength"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_1",
+            "label": "prescription cognitive enhancers",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "216284",
+                "Cruex Prescription Strength"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_2",
+            "label": "ginkgo",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "236809",
+                "Ginkgo biloba extract"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_3",
+            "label": "high-dose vitamin E",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "P",
+                "11256",
+                "vitamin E"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_4",
+            "label": "lecithin",
+            "type": "DRUG",
+            "matching": [
+                "RXNORM",
+                "E",
+                "8214",
+                "lecithin"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_5",
+            "label": "estrogen",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_50114",
+                "estrogen"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_6",
+            "label": "non-steroidal anti-inflammatory drugs [NSAIDs]",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "E",
+                "CHEBI_35475",
+                "non-steroidal anti-inflammatory drug"
+            ],
+            "level": 2
+        },
+        {
+            "id": "DRUG_8_7",
+            "label": "putative cognitive enhancer",
+            "type": "DRUG",
+            "matching": [
+                "CHEBI",
+                "P",
+                "CHEBI_50779",
+                "appetite enhancer"
+            ],
+            "level": 2
+        },
+        {
+            "id": "NEGATION_8_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_8_0",
+            "label": "for at least 3 months prior to the screening visit",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_8_1",
+            "label": "during",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_8_2",
+            "label": "course of the study",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_9_0",
+            "label": "hypertension",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "38341003",
+                "Hypertensive disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_9_1",
+            "label": "right bundle branch block",
+            "type": "CONDITION",
+            "matching": [
+                "ICD9CM",
+                "E",
+                "426.4",
+                "Right bundle branch block"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_9_0",
+            "label": "sitting",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "E",
+                "LA11868-9",
+                "Sitting"
+            ],
+            "level": 2
+        },
+        {
+            "id": "MEASUREMENT_9_1",
+            "label": "diastolic BP",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LA25142-3",
+                "Mid diastolic"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_9_0",
+            "label": "< 95 mmHg",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DEVICE_9_0",
+            "label": "pacemakers",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_10_0",
+            "label": "thyroid disease",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "14304000",
+                "Disorder of thyroid gland"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_10_1",
+            "label": "euthyroid",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "264521008",
+                "Euthyroid"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_10_0",
+            "label": "treatment",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1010875",
+                "Radiation Treatment Delivery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_10_0",
+            "label": "for at least 3 months prior to screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "CONDITION_11_0",
+            "label": "seizure disorder",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "128613002",
+                "Seizure disorder"
+            ],
+            "level": 2
+        },
+        {
+            "id": "CONDITION_11_1",
+            "label": "seizure",
+            "type": "CONDITION",
+            "matching": [
+                "SNOMEDCT",
+                "E",
+                "91175000",
+                "Seizure"
+            ],
+            "level": 2
+        },
+        {
+            "id": "PROCEDURE_11_0",
+            "label": "treatment",
+            "type": "PROCEDURE",
+            "matching": [
+                "CPT",
+                "P",
+                "1010875",
+                "Radiation Treatment Delivery"
+            ],
+            "level": 2
+        },
+        {
+            "id": "TEMPORAL_11_0",
+            "label": "for at least 3 months prior to screening",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "TEMPORAL_11_1",
+            "label": "within the past 6 months",
+            "type": "TEMPORAL",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "NEGATION_11_0",
+            "label": "not",
+            "type": "NEGATION",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DEVICE_13_0",
+            "label": "walker",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DEVICE_13_1",
+            "label": "cane",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DEVICE_13_2",
+            "label": "eyeglasses",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "DEVICE_13_3",
+            "label": "hearing aid",
+            "type": "DEVICE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "MEASUREMENT_15_0",
+            "label": "clinical laboratory values",
+            "type": "MEASUREMENT",
+            "matching": [
+                "LOINC",
+                "P",
+                "LP75011-4",
+                "Laboratory"
+            ],
+            "level": 2
+        },
+        {
+            "id": "VALUE_15_0",
+            "label": "within normal limits",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_15_1",
+            "label": "within the Eisai",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        },
+        {
+            "id": "VALUE_15_2",
+            "label": "guidelines",
+            "type": "VALUE",
+            "matching": [],
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "T0",
+            "target": "PERSON_0_0",
+            "label": "has_age"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_0_1",
+            "label": "has_age"
+        },
+        {
+            "source": "PERSON_0_1",
+            "target": "VALUE_0_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_0",
+            "label": "has_gender"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_1",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_2",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_3",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_4",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "PERSON_1_5",
+            "label": "has_person"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_1_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_1_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "PERSON_1_3",
+            "target": "VALUE_1_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_1_0",
+            "target": "VALUE_1_1",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_2_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_2_0",
+            "target": "VALUE_2_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_3_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_2",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_3_3",
+            "label": "has_measurement"
+        },
+        {
+            "source": "CONDITION_3_0",
+            "target": "TEMPORAL_3_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_4_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_4_1",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_4_2",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_2",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_3",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_4_4",
+            "label": "has_condition"
+        },
+        {
+            "source": "PROCEDURE_4_0",
+            "target": "TEMPORAL_4_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "PROCEDURE_4_2",
+            "target": "TEMPORAL_4_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "PROCEDURE_4_2",
+            "target": "TEMPORAL_4_2",
+            "label": "has_temporal"
+        },
+        {
+            "source": "CONDITION_4_0",
+            "target": "NEGATION_4_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_7_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_0",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_1",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_2",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_3",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_4",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_5",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_6",
+            "label": "has_drug"
+        },
+        {
+            "source": "T0",
+            "target": "DRUG_8_7",
+            "label": "has_drug"
+        },
+        {
+            "source": "DRUG_8_7",
+            "target": "TEMPORAL_8_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_8_7",
+            "target": "TEMPORAL_8_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_8_7",
+            "target": "TEMPORAL_8_2",
+            "label": "has_temporal"
+        },
+        {
+            "source": "DRUG_8_6",
+            "target": "NEGATION_8_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_9_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_9_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_9_1",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_9_1",
+            "target": "VALUE_9_0",
+            "label": "has_value"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_10_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_10_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PROCEDURE_10_0",
+            "target": "TEMPORAL_10_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_11_0",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "CONDITION_11_1",
+            "label": "has_condition"
+        },
+        {
+            "source": "T0",
+            "target": "PROCEDURE_11_0",
+            "label": "has_procedure"
+        },
+        {
+            "source": "PROCEDURE_11_0",
+            "target": "TEMPORAL_11_0",
+            "label": "has_temporal"
+        },
+        {
+            "source": "CONDITION_11_1",
+            "target": "TEMPORAL_11_1",
+            "label": "has_temporal"
+        },
+        {
+            "source": "CONDITION_11_1",
+            "target": "NEGATION_11_0",
+            "label": "has_negation"
+        },
+        {
+            "source": "T0",
+            "target": "MEASUREMENT_15_0",
+            "label": "has_measurement"
+        },
+        {
+            "source": "MEASUREMENT_15_0",
+            "target": "VALUE_15_0",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_15_0",
+            "target": "VALUE_15_1",
+            "label": "has_value"
+        },
+        {
+            "source": "MEASUREMENT_15_0",
+            "target": "VALUE_15_2",
+            "label": "has_value"
+        }
+    ]
+}
