@@ -2,7 +2,7 @@ var import_file = function(json_file, file_name) {
     //copying the content of nodes and links 
     var nodes = [...json_file.nodes]
     var links = [...json_file.links]
-  //  console.log(nodes)
+    //console.log(nodes)
     for(let i = 0; i < links.length; i++){
       if(links[i].target.id != null || links[i].source.id != null){
         links[i].target = links[i].target.id

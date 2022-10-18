@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">    
+    <link href="./d3-context-menu.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="./d3-context-menu.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+
+
+
+<body>
+  <div id="buttons">
+    <div>
+  <input type="file" id="selectFiles" value="Import" /><br />
+  </div>
+  <div>
+  <button id="import">Import</button>
+  </div>
+  <div>
+    <a id="exportJSON" onclick= downloadHandler(this) class="btn"><button>Download!</button></a>
+  </div>
+  </div>
+
+    <svg width="600" height="600"></svg>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Create link between existing nodes</h1>
+        </div>
+    </div>
+
+</body>
+<script type = 'text/javascript' src="import.js"></script>
+<script>
+
+
+const modal = document.querySelector(".modal");
+const modal_content = document.querySelector(".modal-content")
+const closeButton = document.querySelector(".close-button");
+
+
+function untoggleModal() {
+    if(document.getElementById("source") != null){
+      document.getElementById("source").remove();
+      document.getElementById("target").remove();
+      document.getElementById("link-button").remove();
+      document.getElementById("label").remove();
+      modal.classList.toggle("show-modal");
+    } 
+
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        untoggleModal();
+    }
+}
+
+closeButton.addEventListener("click", untoggleModal());
+window.addEventListener("click", windowOnClick);
+
+    function downloadHandler(el){
+      if(json_file != null || files != null){
+        let f = JSON.parse(JSON.stringify(json_file));
+        
+        for(var i = 0; i < f.nodes.length; i++){
+          delete f.nodes[i].vx
+          delete f.nodes[i].vy
+          delete f.nodes[i].x
+          delete f.nodes[i].y
+          delete f.nodes[i].index
+        }
+
+        for(var i = 0; i < f.links.length; i++){
+          delete f.links[i].source.vx
+          delete f.links[i].source.vy
+          delete f.links[i].source.x
+          delete f.links[i].source.y
+          delete f.links[i].target.vx
+          delete f.links[i].target.vy
+          delete f.links[i].target.x
+          delete f.links[i].target.y
+          delete f.links[i].target.index
+          delete f.links[i].source.index
+        }
+
+        var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(f));
+        el.setAttribute('href', 'data:' + data)
+        el.setAttribute('download', files[0].name)
+      }
+      else{
+        alert("Nothing to download!")
+      }
+
+    }
+
+    document.getElementById('import').onclick = function(){
+      files = document.getElementById('selectFiles').files
+      if(files.length <= 0){
+        alert("No file!")
+        return false
+      }
+      if(files[0].type != 'application/json'){
+        alert("Not a JSON file!")
+        return false
+      }
+
+      var fr = new FileReader();
+
+      fr.readAsText(files.item(0));
+  
+      //to contain the json
+
+      fr.onload = function(e) { 
+      json_file = JSON.parse(e.target.result);
+      import_file(json_file, null)
+    } //end of json onLoad 
+
+  } //end of import function
+
+  
+
+    </script>
+
+
+    
+
+</html>
